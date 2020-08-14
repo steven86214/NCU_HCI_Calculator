@@ -5,8 +5,40 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:NCU_HCI_Calculator"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
-        
+        Title="MainWindow" Height="563" Width="910">
+    <Grid Margin="0,0,-8,1">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="0*"/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="Btn_1" Content="1" HorizontalAlignment="Left" Margin="34,95,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_1_Click"/>
+        <Button x:Name="Btn_2" Content="2" HorizontalAlignment="Left" Margin="122,95,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_2_Click"/>
+        <Button x:Name="Btn_3" Content="3" HorizontalAlignment="Left" Margin="210,95,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_3_Click"/>
+        <Button x:Name="Btn_4" Content="4" HorizontalAlignment="Left" Margin="34,183,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_4_Click"/>
+        <Button x:Name="Btn_5" Content="5" HorizontalAlignment="Left" Margin="122,183,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_5_Click"/>
+        <Button x:Name="Btn_6" Content="6" HorizontalAlignment="Left" Margin="210,183,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_6_Click"/>
+        <Button x:Name="Btn_7" Content="7" HorizontalAlignment="Left" Margin="35,271,0,0" VerticalAlignment="Top" Width="57" Height="57" RenderTransformOrigin="0.667,1.123" Click="Btn_7_Click"/>
+        <Button x:Name="Btn_8" Content="8" HorizontalAlignment="Left" Margin="122,271,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_8_Click"/>
+        <Button x:Name="Btn_9" Content="9" HorizontalAlignment="Left" Margin="211,271,0,0" VerticalAlignment="Top" Width="56" Height="57" Click="Btn_9_Click"/>
+        <TextBlock x:Name="TBK_display" HorizontalAlignment="Left" Margin="34,21,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Height="56" Width="409"/>
+        <Button x:Name="Btn_0" Content="0" HorizontalAlignment="Left" Margin="35,359,0,0" VerticalAlignment="Top" Width="232" Height="57" Click="Btn_0_Click"/>
+        <Button x:Name="Btn_Add" Content="+" HorizontalAlignment="Left" Margin="298,95,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_Add_Click"/>
+        <Button x:Name="Btn_Minus" Content="-" HorizontalAlignment="Left" Margin="298,183,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_Minus_Click"/>
+        <Button x:Name="Btn_Multi" Content="*" HorizontalAlignment="Left" Margin="298,271,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_Multi_Click"/>
+        <Button x:Name="Btn_Div" Content="/" HorizontalAlignment="Left" Margin="298,359,0,0" VerticalAlignment="Top" Width="57" Height="57" Click="Btn_Div_Click"/>
+        <Button x:Name="Btn_BackSpace" Content="←" HorizontalAlignment="Left" Margin="386,95,0,0" VerticalAlignment="Top" Width="57" Height="145" RenderTransformOrigin="-0.035,0.544" Click="Btn_BackSpace_Click"/>
+        <Button x:Name="Btn_Clean" Content="AC" HorizontalAlignment="Left" Margin="386,271,0,0" VerticalAlignment="Top" Width="57" Height="145" RenderTransformOrigin="-0.035,0.544" Click="Btn_Clean_Click"/>
+        <Button x:Name="Btn_Enter" Content="ENTER" HorizontalAlignment="Left" Margin="487,21,0,0" VerticalAlignment="Top" Width="57" Height="56" Click="Btn_Enter_Click"/>
+        <Button x:Name="Btn_Insert" Content="INSERT" HorizontalAlignment="Left" Margin="582,21,0,0" VerticalAlignment="Top" Width="57" Height="56" Click="Btn_Insert_Click"/>
+        <Label Content="Prefix :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="487,116,0,0" Height="29" Width="74" RenderTransformOrigin="0.541,2"/>
+        <Label Content="Postfix :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="487,199,0,0" Height="29" Width="74"/>
+        <Label Content="Decimal :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="487,287,0,0" Height="29" Width="74"/>
+        <Label Content="Binary :" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="487,375,0,0" Height="29" Width="74"/>
+        <TextBlock x:Name="TBK_Preorder" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="582,121,0,0" Height="24" Width="232"/>
+        <Button x:Name="Btn_Query" Content="QUERY" HorizontalAlignment="Left" Margin="676,21,0,0" VerticalAlignment="Top" Width="57" Height="56" Click="Btn_Query_Click"/>
+        <TextBlock x:Name="TBK_Postorder" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="582,204,0,0" Height="24" Width="232"/>
+        <TextBlock x:Name="TBK_Sol_Dec" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="582,292,0,0" Height="24" Width="232"/>
+        <TextBlock x:Name="TBK_Sol_Bin" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="582,380,0,0" Height="24" Width="232"/>
+
     </Grid>
 </Window>
